@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widgets/bean/bottom_tab_bean.dart';
-import 'package:flutter_widgets/widgets/image_widgets.dart';
+import 'package:flutter_widgets/entity/bottom_tab_entity.dart';
+import 'package:flutter_widgets/utils/image_utils.dart';
 
 /// @author：yongfeng
 /// @data：2024/7/25 11:50
@@ -8,7 +8,7 @@ import 'package:flutter_widgets/widgets/image_widgets.dart';
 class BottomTabWidget extends StatelessWidget {
   final ValueNotifier<int> selectedNotifier;
   final ValueChanged<int> itemClick;
-  final List<BottomTabBean> tabBeanList;
+  final List<BottomTabEntity> tabBeanList;
 
   const BottomTabWidget({
     super.key,
@@ -65,7 +65,7 @@ class BottomTabItemWidget extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        buildSvgWidget(itemImage, color: color),
+        ImageUtils.buildSvgWidget(itemImage, color: color),
         Text(
           itemText,
           textAlign: TextAlign.center,

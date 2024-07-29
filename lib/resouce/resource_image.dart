@@ -1,12 +1,18 @@
 /// @author：yongfeng
 /// @data：2024/7/25 12:17
 
-const String kIcBottomTabHome = 'assets/images/ic_tab_home.svg';
+class ResImage {
+  ResImage._internal();
 
-const String kIcBottomTabSmart = 'assets/images/ic_tab_smart.svg';
+  static const String kIcBottomTabHome = 'assets/images/ic_tab_home.svg';
 
-const String kIcBottomTabCategory= 'assets/images/ic_tab_category.svg';
+  static const String kIcBottomTabSmart = 'assets/images/ic_tab_smart.svg';
 
-const String kIcBottomTabMine = 'assets/images/ic_tab_mine.svg';
+  static const String kIcBottomTabCategory = 'assets/images/ic_tab_category.svg';
 
-const String kIcBottomTabDesktop = 'assets/images/ic_desktop.png';
+  static const String kIcBottomTabMine = 'assets/images/ic_tab_mine.svg';
+
+  static const String kIcBottomTabDesktop = 'assets/images/ic_desktop.png';
+
+  static const String kIcBackground = 'assets/images/ic_background.png';
+}

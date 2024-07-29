@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widgets/bean/bottom_tab_bean.dart';
 import 'package:flutter_widgets/category/category_page.dart';
+import 'package:flutter_widgets/entity/bottom_tab_entity.dart';
 import 'package:flutter_widgets/home/bottom_tab_widget.dart';
 import 'package:flutter_widgets/home/home_page.dart';
 import 'package:flutter_widgets/mine/mine_page.dart';
@@ -22,18 +22,18 @@ class _MainPageState extends State<MainPage> with AutomaticKeepAliveClientMixin<
   final PageController pageController = PageController(initialPage: 0);
   final ValueNotifier<int> selectedNotifier = ValueNotifier(0);
 
-  final List<Widget> pageList = [
+  final List<Widget> pageList = const [
     HomePage(),
     SmartPage(),
     CategoryPage(),
     MinePage(),
   ];
 
-  final List<BottomTabBean> tabBeanList = [
-    BottomTabBean(0, kIcBottomTabHome, kTxtHome),
-    BottomTabBean(1, kIcBottomTabSmart, kTxtSmart),
-    BottomTabBean(2, kIcBottomTabCategory, kTxtCategory),
-    BottomTabBean(3, kIcBottomTabMine, kTxtMine),
+  final List<BottomTabEntity> tabBeanList = [
+    BottomTabEntity(0, ResImage.kIcBottomTabHome, ResText.kTxtHome),
+    BottomTabEntity(1, ResImage.kIcBottomTabSmart, ResText.kTxtSmart),
+    BottomTabEntity(2, ResImage.kIcBottomTabCategory, ResText.kTxtCategory),
+    BottomTabEntity(3, ResImage.kIcBottomTabMine, ResText.kTxtMine),
   ];
 
   @override

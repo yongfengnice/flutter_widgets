@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-
-import 'main/main_page.dart';
+import 'package:flutter_widgets/main/main_page.dart';
+import 'package:flutter_widgets/router/app_route_settings.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: const MainPage(),
+      onGenerateRoute: appGenerateRoute,
     );
   }
 }
