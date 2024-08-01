@@ -13,7 +13,11 @@ class AppRouter {
     return instance;
   }
 
-  void push(BuildContext context, String routeName, {Object? arguments}) {
-    Navigator.pushNamed(context, routeName, arguments: arguments);
+  Future<T?> push<T extends Object?>(BuildContext context, String routeName, {Object? arguments}) {
+    return Navigator.pushNamed(context, routeName, arguments: arguments);
+  }
+
+  void pop<T extends Object?>(BuildContext context, [T? result]) {
+    Navigator.of(context).pop<T>(result);
   }
 }

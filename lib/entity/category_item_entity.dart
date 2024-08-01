@@ -3,6 +3,7 @@
 ///
 class CategoryItemEntity {
   final String text;
+  final String routeName;
 
-  CategoryItemEntity({required this.text});
+  CategoryItemEntity({required this.text, required this.routeName});
 }

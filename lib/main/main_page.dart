@@ -4,8 +4,8 @@ import 'package:flutter_widgets/entity/bottom_tab_entity.dart';
 import 'package:flutter_widgets/home/bottom_tab_widget.dart';
 import 'package:flutter_widgets/home/home_page.dart';
 import 'package:flutter_widgets/mine/mine_page.dart';
-import 'package:flutter_widgets/resouce/resource_image.dart';
-import 'package:flutter_widgets/resouce/resource_text.dart';
+import 'package:flutter_widgets/resouce/res_image.dart';
+import 'package:flutter_widgets/resouce/res_text.dart';
 import 'package:flutter_widgets/smart/smart_page.dart';
 
 /// @author：yongfeng
@@ -40,7 +40,7 @@ class _MainPageState extends State<MainPage> with AutomaticKeepAliveClientMixin<
   Widget build(BuildContext context) {
     return Scaffold(
       body: PageView(
-        physics: const NeverScrollableScrollPhysics(), //禁止滚动
+        // physics: const NeverScrollableScrollPhysics(), //禁止滚动
         controller: pageController,
         children: pageList,
         onPageChanged: (index) {

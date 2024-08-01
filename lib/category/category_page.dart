@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widgets/category/category_list_item.dart';
 import 'package:flutter_widgets/entity/category_item_entity.dart';
+import 'package:flutter_widgets/model/category_model.dart';
+import 'package:flutter_widgets/router/app_route_settings.dart';
 
 /// @author：yongfeng
 /// @data：2024/7/25 10:33
@@ -20,7 +22,7 @@ class _CategoryPageState extends State<CategoryPage>
   @override
   void initState() {
     super.initState();
-    categoryList.add(CategoryItemEntity(text: 'NestedScrollView class测试'));
+    categoryList.addAll(CategoryModel().getCategoryList());
   }
 
   @override

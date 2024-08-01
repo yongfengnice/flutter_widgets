@@ -3,7 +3,7 @@ import 'package:flutter_widgets/constant/app_constants.dart';
 import 'package:flutter_widgets/entity/home_tab_entity.dart';
 import 'package:flutter_widgets/home/home_tab_bar.dart';
 import 'package:flutter_widgets/home/home_tab_view.dart';
-import 'package:flutter_widgets/resouce/resource_image.dart';
+import 'package:flutter_widgets/resouce/res_image.dart';
 import 'package:flutter_widgets/utils/image_utils.dart';
 
 /// @author：yongfeng
@@ -16,7 +16,8 @@ class HomePage extends StatefulWidget {
   State<HomePage> createState() => _HomePageState();
 }
 
-class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin {
+class _HomePageState extends State<HomePage>
+    with SingleTickerProviderStateMixin, AutomaticKeepAliveClientMixin {
   late TabController tabController;
 
   List<HomeTabEntity> homeTabEntityList = [
@@ -66,7 +67,8 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
                       bottom: AppConstant.kAppToolbarHeight,
                       left: 0,
                       right: 0,
-                      child: ImageUtils.buildPngWidget(ResImage.kIcBackground, boxFit: BoxFit.cover),
+                      child:
+                          ImageUtils.buildPngWidget(ResImage.kIcBackground, boxFit: BoxFit.cover),
                     ),
                   ],
                 ),
@@ -88,4 +90,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
       ),
     );
   }
+
+  @override
+  bool get wantKeepAlive => true;
 }

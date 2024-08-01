@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widgets/constant/app_constants.dart';
-import 'package:flutter_widgets/resouce/resource_image.dart';
+import 'package:flutter_widgets/resouce/res_image.dart';
 import 'package:flutter_widgets/utils/image_utils.dart';
 
 /// @author：yongfeng
