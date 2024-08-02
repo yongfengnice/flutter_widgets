@@ -3,6 +3,7 @@ import 'package:flutter_widgets/error/not_found_page.dart';
 import 'package:flutter_widgets/test/dash_line_test.dart';
 import 'package:flutter_widgets/test/file_picker_test.dart';
 import 'package:flutter_widgets/test/nest_scrollView_test.dart';
+import 'package:flutter_widgets/test/path_provider_test.dart';
 import 'package:flutter_widgets/test/wifi_check_test.dart';
 
 /// @author：yongfeng
@@ -18,6 +19,7 @@ class AppRouteParam {
   static const dashLineTest = "/DashLineTest";
   static const filePickerTest = "/FilePickerTest";
   static const wifiCheckTest = "/WifiCheckTest";
+  static const pathProviderTest = "/PathProviderTest";
 }
 
 ///通过settings.arguments传递参数
@@ -32,6 +34,8 @@ Route appGenerateRoute(RouteSettings settings) {
         return const FilePickerTest();
       case AppRouteParam.wifiCheckTest:
         return const WifiCheckTest();
+      case AppRouteParam.pathProviderTest:
+        return const PathProviderTest();
       default:
         return const NotFoundPage();
     }

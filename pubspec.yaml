@@ -12,9 +12,11 @@ dependencies:
     sdk: flutter
   flutter_svg: ^2.0.10 #svg图片(MIT)
   cupertino_icons: ^1.0.2
-  file_picker: ^8.0.5 #文件选择
+  file_picker: ^8.0.5 #图片文档选择
   connectivity_plus: ^6.0.4 #网络检查
   dio: ^5.5.0+1 #dio网络请求
+  path_provider: ^2.1.4 #文件目录操作
+  oktoast: ^3.4.0 #toast土司提示
 
 dev_dependencies:
   flutter_test:

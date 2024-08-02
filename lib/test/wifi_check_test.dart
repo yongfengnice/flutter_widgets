@@ -6,7 +6,7 @@ import 'package:flutter_widgets/base/base_scaffold.dart';
 
 /// @author：yongfeng
 /// @data：2024/8/1 19:06
-///
+/// 网络连接类型判断测试
 class WifiCheckTest extends StatefulWidget {
   const WifiCheckTest({super.key});
 
