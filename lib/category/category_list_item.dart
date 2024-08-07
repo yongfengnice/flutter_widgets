@@ -14,7 +14,7 @@ class CategoryListItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        AppRouter.instance.push(context, entity.routeName);
+        AppRouter.instance.pushNamed(context, entity.routeName);
       },
       child: Container(
         color: Colors.deepOrangeAccent,

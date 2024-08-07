@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widgets/error/not_found_page.dart';
+import 'package:flutter_widgets/main/main_page.dart';
 import 'package:flutter_widgets/test/dash_line_test.dart';
 import 'package:flutter_widgets/test/file_picker_test.dart';
 import 'package:flutter_widgets/test/nest_scrollView_test.dart';
@@ -15,6 +16,7 @@ class AppRouteParam {
   ///
   AppRouteParam._internal();
 
+  static const mainPage = "/mainPage";
   static const nestScrollViewTest = "/NestScrollViewTest";
   static const dashLineTest = "/DashLineTest";
   static const filePickerTest = "/FilePickerTest";
@@ -26,6 +28,8 @@ class AppRouteParam {
 Route appGenerateRoute(RouteSettings settings) {
   return MaterialPageRoute(builder: (context) {
     switch (settings.name) {
+      case AppRouteParam.mainPage:
+        return const MainPage();
       case AppRouteParam.nestScrollViewTest:
         return const NestScrollViewTest();
       case AppRouteParam.dashLineTest:

@@ -56,8 +56,12 @@ class BottomTabItemWidget extends StatelessWidget {
   final String itemText;
 
   ///
-  const BottomTabItemWidget(
-      {super.key, required this.itemImage, required this.itemText, required this.selected});
+  const BottomTabItemWidget({
+    super.key,
+    required this.itemImage,
+    required this.itemText,
+    required this.selected,
+  });
 
   @override
   Widget build(BuildContext context) {

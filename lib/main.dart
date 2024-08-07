@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widgets/main/main_page.dart';
 import 'package:flutter_widgets/router/app_route_settings.dart';
+import 'package:flutter_widgets/splash/splash_page.dart';
 import 'package:oktoast/oktoast.dart';
 
 void main() {
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MainPage(),
+      home: const SplashPage(),
       onGenerateRoute: appGenerateRoute,
       builder: (context, widget) {
         return OKToast(child: widget ?? const SizedBox());
