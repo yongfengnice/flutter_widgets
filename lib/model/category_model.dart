@@ -29,6 +29,14 @@ class CategoryModel {
       text: 'pathProvider文件路径操作测试',
       routeName: AppRouteParam.pathProviderTest,
     ));
+    _categoryList.add(CategoryItemEntity(
+      text: 'PackageInfo获取包信息测试',
+      routeName: AppRouteParam.packageInfoTest,
+    ));
+    _categoryList.add(CategoryItemEntity(
+      text: 'shared_preferences数据存储测试',
+      routeName: AppRouteParam.sharedPreferencesTest,
+    ));
   }
 
   List<CategoryItemEntity> getCategoryList() {
