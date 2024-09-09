@@ -37,6 +37,14 @@ class CategoryModel {
       text: 'shared_preferences数据存储测试',
       routeName: AppRouteParam.sharedPreferencesTest,
     ));
+    _categoryList.add(CategoryItemEntity(
+      text: 'pull_to_refresh下拉刷新测试',
+      routeName: AppRouteParam.pullToRefreshTest,
+    ));
+    _categoryList.add(CategoryItemEntity(
+      text: 'isolate工具测试',
+      routeName: AppRouteParam.isolateUtilsTest,
+    ));
   }
 
   List<CategoryItemEntity> getCategoryList() {
