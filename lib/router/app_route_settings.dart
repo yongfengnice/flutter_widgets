@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_widgets/error/not_found_page.dart';
 import 'package:flutter_widgets/main/main_page.dart';
 import 'package:flutter_widgets/test/dash_line_test.dart';
+import 'package:flutter_widgets/test/event_bus_test.dart';
 import 'package:flutter_widgets/test/file_picker_test.dart';
 import 'package:flutter_widgets/test/isolate_utils_test.dart';
 import 'package:flutter_widgets/test/nest_scrollView_test.dart';
@@ -34,6 +35,7 @@ class AppRouteParam {
   static const isolateUtilsTest = "/IsolateUtilsTest";
   static const tapRegionTest = "/tapRegionTest";
   static const providerTest = "/providerTest";
+  static const eventBusTest = "/eventBusTest";
 }
 
 ///通过settings.arguments传递参数
@@ -64,6 +66,8 @@ Route appGenerateRoute(RouteSettings settings) {
         return const TapRegionTest();
       case AppRouteParam.providerTest:
         return const ProviderTest();
+      case AppRouteParam.eventBusTest:
+        return const EventBusTest();
       default:
         return const NotFoundPage();
     }
