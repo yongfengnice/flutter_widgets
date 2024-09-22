@@ -45,6 +45,14 @@ class CategoryModel {
       text: 'isolate工具测试',
       routeName: AppRouteParam.isolateUtilsTest,
     ));
+    _categoryList.add(CategoryItemEntity(
+      text: 'TapRegion实现自定义Toast',
+      routeName: AppRouteParam.tapRegionTest,
+    ));
+    _categoryList.add(CategoryItemEntity(
+      text: 'ProviderTest使用测试',
+      routeName: AppRouteParam.providerTest,
+    ));
   }
 
   List<CategoryItemEntity> getCategoryList() {

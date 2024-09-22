@@ -3,12 +3,14 @@ import 'package:flutter_widgets/error/not_found_page.dart';
 import 'package:flutter_widgets/main/main_page.dart';
 import 'package:flutter_widgets/test/dash_line_test.dart';
 import 'package:flutter_widgets/test/file_picker_test.dart';
+import 'package:flutter_widgets/test/isolate_utils_test.dart';
 import 'package:flutter_widgets/test/nest_scrollView_test.dart';
 import 'package:flutter_widgets/test/package_info_test.dart';
 import 'package:flutter_widgets/test/path_provider_test.dart';
-import 'package:flutter_widgets/test/isolate_utils_test.dart';
+import 'package:flutter_widgets/test/provider_test.dart';
 import 'package:flutter_widgets/test/pull_to_refresh_test.dart';
 import 'package:flutter_widgets/test/shared_preferences_test.dart';
+import 'package:flutter_widgets/test/tap_region_test.dart';
 import 'package:flutter_widgets/test/wifi_check_test.dart';
 
 /// @author：yongfeng
@@ -30,6 +32,8 @@ class AppRouteParam {
   static const sharedPreferencesTest = "/SharedPreferencesTest";
   static const pullToRefreshTest = "/PullToRefreshTest";
   static const isolateUtilsTest = "/IsolateUtilsTest";
+  static const tapRegionTest = "/tapRegionTest";
+  static const providerTest = "/providerTest";
 }
 
 ///通过settings.arguments传递参数
@@ -56,6 +60,10 @@ Route appGenerateRoute(RouteSettings settings) {
         return const PullToRefreshTest();
       case AppRouteParam.isolateUtilsTest:
         return const IsolateUtilsTest();
+      case AppRouteParam.tapRegionTest:
+        return const TapRegionTest();
+      case AppRouteParam.providerTest:
+        return const ProviderTest();
       default:
         return const NotFoundPage();
     }

@@ -32,7 +32,7 @@ class _SplashPageState extends State<SplashPage> with SingleTickerProviderStateM
         ..indicatorSize = 10
         ..positionType = BannerIndicator.bottomCenter,
       children: [
-        Container(color: Colors.red),
+        Container(color: Colors.brown),
         Container(color: Colors.blue),
         Container(color: Colors.deepPurple),
         Container(
