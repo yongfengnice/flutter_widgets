@@ -18,10 +18,11 @@ dependencies:
   path_provider: ^2.1.4 #文件目录操作
   oktoast: ^3.4.0 #toast土司提示
   contained_tab_bar_view: ^0.8.0
-  package_info_plus: ^8.0.2
-  shared_preferences: ^2.2.3
-  pull_to_refresh: ^2.0.0
-  provider: ^6.1.2
+  package_info_plus: ^8.0.2    #获取安装包信息比如版本号
+  shared_preferences: ^2.2.3  #sp本地key-value存储
+  pull_to_refresh: ^2.0.0     #下拉刷新上拉加载更多
+  provider: ^6.1.2        #类似setState的状态刷新
+  event_bus: ^2.0.0       #事件通知
 
 dev_dependencies:
   flutter_test:

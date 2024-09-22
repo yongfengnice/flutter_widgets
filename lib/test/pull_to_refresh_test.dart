@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:io';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -98,6 +99,10 @@ class _PullToRefreshTestState extends State<PullToRefreshTest> {
     }
   }
 
+  bool isPc() {
+    return Platform.isMacOS || Platform.isLinux || Platform.isWindows || Platform.isFuchsia;
+  }
+
   Widget buildBodyWidget() {
     return SmartRefresher(
       scrollController: _scrollController,
@@ -108,7 +113,14 @@ class _PullToRefreshTestState extends State<PullToRefreshTest> {
         builder: (BuildContext context, LoadStatus? mode) {
           Widget body;
           if (mode == LoadStatus.idle) {
-            body = const Text("上拉加载更多");
+            body = InkWell(
+              onTap: () {
+                if (isPc()) {
+                  _refreshController.requestLoading();
+                }
+              },
+              child: Text(isPc() ? "点击加载更多" : "上拉加载更多"),
+            );
           } else if (mode == LoadStatus.loading) {
             body = const CupertinoActivityIndicator();
           } else if (mode == LoadStatus.failed) {
