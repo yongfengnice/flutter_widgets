@@ -26,6 +26,10 @@ class CategoryModel {
       routeName: AppRouteParam.wifiCheckTest,
     ));
     _categoryList.add(CategoryItemEntity(
+      text: 'NetworkInfoPlus网络信息获取测试',
+      routeName: AppRouteParam.networkInfoPlusTest,
+    ));
+    _categoryList.add(CategoryItemEntity(
       text: 'pathProvider文件路径操作测试',
       routeName: AppRouteParam.pathProviderTest,
     ));

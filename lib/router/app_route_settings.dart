@@ -6,6 +6,7 @@ import 'package:flutter_widgets/test/event_bus_test.dart';
 import 'package:flutter_widgets/test/file_picker_test.dart';
 import 'package:flutter_widgets/test/isolate_utils_test.dart';
 import 'package:flutter_widgets/test/nest_scrollView_test.dart';
+import 'package:flutter_widgets/test/network_info_plus_test.dart';
 import 'package:flutter_widgets/test/package_info_test.dart';
 import 'package:flutter_widgets/test/path_provider_test.dart';
 import 'package:flutter_widgets/test/provider_test.dart';
@@ -28,6 +29,7 @@ class AppRouteParam {
   static const dashLineTest = "/DashLineTest";
   static const filePickerTest = "/FilePickerTest";
   static const wifiCheckTest = "/WifiCheckTest";
+  static const networkInfoPlusTest = "/NetworkInfoPlusTest";
   static const pathProviderTest = "/PathProviderTest";
   static const packageInfoTest = "/PackageInfoTest";
   static const sharedPreferencesTest = "/SharedPreferencesTest";
@@ -52,6 +54,8 @@ Route appGenerateRoute(RouteSettings settings) {
         return const FilePickerTest();
       case AppRouteParam.wifiCheckTest:
         return const WifiCheckTest();
+      case AppRouteParam.networkInfoPlusTest:
+        return const NetworkInfoPlusTest();
       case AppRouteParam.pathProviderTest:
         return const PathProviderTest();
       case AppRouteParam.packageInfoTest:
